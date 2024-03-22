@@ -6,6 +6,10 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-    <h:outputLabel value="Hello, world"/>
+    <h:form>
+        <h:inputText value="#{bean.texto}"></h:inputText>
+        <h:commandButton value="Enviar"></h:commandButton>
+    </h:form>
 </f:view>
+
 </html>
