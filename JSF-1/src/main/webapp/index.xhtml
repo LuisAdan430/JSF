@@ -4,12 +4,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+<h:head>
+    <title>Formulario</title>
+</h:head>
+<h:body>
     <h:form>
-        <h:inputText value="#{bean.texto}"></h:inputText>
-        <h:commandButton value="Enviar"></h:commandButton>
+        <h:inputText value="#{bean.texto}"/>
+        <h:commandButton
+                value="Enviar"
+                action="resultado"/>
     </h:form>
-</f:view>
+</h:body>
 
 </html>
