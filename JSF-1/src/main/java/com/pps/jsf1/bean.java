@@ -1,8 +1,6 @@
 package com.pps.jsf1;
 
-import jakarta.enterprise.context.RequestScoped;
 import jakarta.enterprise.context.SessionScoped;
-import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
 
 import java.io.Serializable;
@@ -13,9 +11,11 @@ import java.io.Serializable;
 //@RequestScoped
 public class bean implements Serializable {
     private String texto;
-    public bean(){
+
+    public bean() {
 
     }
+
     public String getTexto() {
         return texto;
     }
@@ -23,7 +23,6 @@ public class bean implements Serializable {
     public void setTexto(String texto) {
         this.texto = texto;
     }
-
 
 
 }
