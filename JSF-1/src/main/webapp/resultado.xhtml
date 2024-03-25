@@ -10,12 +10,23 @@
     <title>Resultado</title>
 </h:head>
 <h:body>
+    <h:form>
     <div class="container">
-        <h1>Resultado</h1>
-        <div class="datos"> Datos ingresados: </div>
+        <h1>RESULTADO</h1>
         <p>Texto: #{bean.texto}</p>
         <h:graphicImage value="images/Imagen.png" styleClass="imagen"/>
+        <br/>
+        <h:commandButton
+                value="REGRESAR"
+                action="regresar"
+                styleClass="btn-regresar"
+        />
     </div>
+    </h:form>
+
+
+
+
 </h:body>
 
 </html>

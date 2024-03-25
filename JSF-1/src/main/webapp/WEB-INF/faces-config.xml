@@ -1,16 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!--faces-config
+<faces-config
               version="3.0"
               xmlns="https://jakarta.ee/xml/ns/jakartaee"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-                                  https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">-->
-<faces-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-              http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
-              version="2.3">
+                                  https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
     <managed-bean>
         <managed-bean-name>bean</managed-bean-name>
         <managed-bean-class>com.pps.jsf1.bean</managed-bean-class>
@@ -23,5 +18,15 @@
             <to-view-id>/resultado.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+
     </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/resultado.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>regresar</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
 </faces-config>
